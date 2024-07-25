@@ -13,7 +13,7 @@ Future<void> _signUp(String email, String password, String name) async {
     await userCredential.user.updateProfile(displayName: name);
     print('회원가입 성공: ${userCredential.user}');
   } catch (e) {
-    print('회원가입 오류 발생: $e');
+    print('회원가입 오류 발생: $e')
   }
 }
 
